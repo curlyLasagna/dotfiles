@@ -1,0 +1,23 @@
+XF86MonBrightnessUp 
+	brightnessctl set 10%+
+
+XF86MonBrightnessDown
+	brightnessctl set 10%-
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+super + d
+	rofi -show drun -dpi 120 -font "SF Compact Display 12" -show-icons 
+
+super + Return
+      alacritty
+
+Print
+	maim -s --format jpg | tee ~/Pictures/$(date +%Y-%m-%e-%H:%M).jpg | cb copy
+
+super + shift + BackSpace
+	pkill -USR1 -x sxhkd

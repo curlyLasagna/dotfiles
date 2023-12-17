@@ -1,0 +1,24 @@
+# Invert color
+map i recolor
+# Less-like navigation
+map D toggle_pane_mode
+map d scroll full-down
+map u scroll full-up
+
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+# Disable all GUI decorations
+set guioptions ""
+
+# Simple window title
+set window-title-basename true
+set render-loading "true"
+
+# Open document to fill window width
+set adjust-open "width"
+set pages-per-row 1
+
+# Stop at page boundary
+set scroll-page-aware "true"
